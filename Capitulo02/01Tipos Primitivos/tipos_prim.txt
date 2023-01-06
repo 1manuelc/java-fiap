@@ -1,0 +1,15 @@
+Tipos para inteiros
+        int = -2bi ate 2bi (4 bytes)
+        short = -32,768 ate 32,767 (2 bytes)
+        long = -9 ate 9 quintilhões (8 bytes)
+        byte = -128 ate 127 (1 byte)
+        
+Tipos para ponto flutuante
+    float = 6-7 digitos decimais
+    double = 15 digitos decimais
+
+Tipo para caracter (char)
+        
+Tipo booleano (boolean)
+
+!Type cast ou conversão explítcita é certeira somente de um tipo de tamanho menor para um de tamanho maior, o inverso é incerto

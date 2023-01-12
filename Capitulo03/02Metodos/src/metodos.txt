@@ -1,0 +1,14 @@
+Sintaxe para declaracao de metodo em Java:
+    <modificador> <tipo de retorno> <nome do metodo> (lista de Argumentos) { bloco }
+
+    modificador = nivel de acessibilidade do metodo (hierarquia): public, private, protected (sem modificador se torna friendly);
+
+    tipo de retorno = void ou tipo de dado;
+
+    lista de Argumentos = lista de argumentos a serem recebidos para o metodo funcionar, deve-se explicitar o tipo de dado e separar argumentos por virgula;
+
+
+    p.ex.:
+        void depositar(int agencia, string numeroConta, double valor) {
+            // bloco de codigo
+        }

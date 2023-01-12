@@ -1,0 +1,20 @@
+Sobrecarga de Metodos:
+    Dois metodos com o mesmo nome e modificador, mas com assinaturas diferentes para guiar seu uso;
+
+    p.ex.: depositar(double valor); e depositar(double valor, double taxa);
+
+    A execução dependerá dos parâmetros passados
+
+Essa sobrecarga também funciona para variaveis:
+    Suponhamos que exista uma variavel "numero" na classe usada e uma variavel de mesmo nome dentro de um metodo na classe;
+
+    public class App {
+        int numero;
+        
+        public void criarAgencia(int numero) {
+            this.numero = scanner.nextInt();
+        }
+    }
+
+    Diferenciamos as duas variaveis de mesmo nome atraves da palavra reservada "this", que restringe o uso da variavel do escopo atual;
+    

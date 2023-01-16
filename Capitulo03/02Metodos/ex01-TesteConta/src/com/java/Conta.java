@@ -21,4 +21,26 @@ public class Conta {
     public void depositar(double valor, double taxa) {
         saldo += valor - taxa;
     }
+    
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    // Implementação de Construtor
+
+    public Conta() {
+
+    }
+
+    public Conta(int numero, double saldo, String nome, byte idade) {
+        this.numero = numero;
+        this.saldo = saldo;
+        this.cliente.nome = nome;
+        this.cliente.idade = idade;
+    }
 }

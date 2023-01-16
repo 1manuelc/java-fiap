@@ -1,0 +1,23 @@
+Modificadores de acesso são palavras reservadas que limitam o acesso de:
+- Classes
+- Atributos
+- Métodos
+- Construtores
+
+Sendo esses os modificadores:
+- Public:
+    Pode ser usado por todas as classes
+
+- Private:
+    O elemento somente poderá ser acessado na mesma classe
+
+- Protected
+    Pode ser acessado por classes e subclasses do mesmo pacote
+
+- Package ou Friendly:
+    Forma padrão de modificador (quando há ausência dele)
+    O elemento pode ser acessado por classes e subclasses que estão no mesmo pacote
+
+- Stactic
+- Abstract
+- Final

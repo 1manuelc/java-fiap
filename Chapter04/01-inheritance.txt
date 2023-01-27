@@ -1,0 +1,6 @@
+    Inheritance is when a subclass inherits a superclass characteristics (like attributes and functions)
+    To make this work, we need to add the word "extends" in the declaration of the subclass and refer
+    to what class will be the superclass for the respective class.
+
+    example:
+        public class CurrentAccount extends Account {}

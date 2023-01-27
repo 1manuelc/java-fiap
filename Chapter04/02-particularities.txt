@@ -1,0 +1,8 @@
+    Logically we'll need to use the superclass attributes for some reason and context, for this:
+    Insert the prefix "super." to refer to the superclass features inside his subclasses.
+
+    example:
+        public double getBalanceAvailable() {
+                return super.getBalance() + this.specialCheckBalance; // Uses super."feature" to use the current
+                                                                      // superclass features into this subclass
+        }

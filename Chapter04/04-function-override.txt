@@ -1,0 +1,17 @@
+    Function override in subclasses work as an overwriting over the identical function in the superclass.
+
+    Example:
+        SUPERCLASS Account:
+            public void removeBalance(double value) {this.balance -= value;}
+
+        SUBCLASS CurrentAccount:
+            @Override
+                public void removeBalance(double value) {
+                    value += 10;
+                    super.removeBalance(value);
+                }
+
+    It's important to remember that these subclasses features inherits based in the declaration, specifically
+    the constructor and type of variable used.
+
+    ! Don't delete the default constructor, the subclasses uses him in every declaration.

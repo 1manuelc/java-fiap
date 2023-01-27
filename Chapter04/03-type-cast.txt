@@ -1,0 +1,25 @@
+        /*
+        Account currentAccount = new Account(1089, 11, 3.87);
+        Account savingsAccount = new Account(1089, 51, 5500);
+
+        savingsAccount.getInfo();
+        savingsAccount.removeBalance(2500);
+        System.out.println("R$" + savingsAccount.getBalance());
+
+        currentAccount.getInfo();
+        currentAccount.addBalance(2500);
+        System.out.println("R$" + currentAccount.getBalance());
+        */
+
+        CurrentAccount acc1 = (CurrentAccount) new Account(1111, 50, 2000);
+        // This is a type cast, that manages to convert types.
+        // Note that Account object conversion to CurrentAccount object it's possible because
+        // the CurrentAccount type is a subclass of Account, including additional features.
+        // If was the inverse, this conversion would be meaningless.
+        !note = I couldn't make this conversion btw, had to use other ways.
+
+        CurrentAccount acc2 = acc1; // It's possible because its equal types (both CurrentAccount).
+
+        Account acc3 = new Account();
+        // CurrentAccount acc4 = acc3; -> Impossible, different types, need a type cast to work.
+        CurrentAccount acc4 = (CurrentAccount) acc3;

@@ -1,0 +1,11 @@
+As diretrizes JavaBeans ditam nomes de variáveis, tipos de retorno de métodos e outros aspectos do objeto, chamado beans, para que seja amplamente reutilizável
+
+REGRAS DE CLASSE JAVABEANS:
+    - Ter um construtor padrão, sem argumentos
+    - Encapsular atributos, criando métodos para acesso a eles em outras classes (getters & setters)
+    - Implementar java.io.Serializable
+        public Class Classe implements Serializable
+
+Encapsulamento é aplicado a métodos e atributos e consiste em proteger os dados ou até mesmo escondê-los (dependendo do contexto)
+
+O uso dos métodos de leitura (get) e escrita (set) visam desacoplar os atributos de uma classe dos clientes que a utilizam (abstração6666)

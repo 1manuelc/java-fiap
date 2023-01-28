@@ -12,7 +12,6 @@ public class Conta {
         return saldo;
     }
 
-
     // Sobrecarga de metodo, diferencia os dois metodos (de nomes iguais e ass e blocos diferentes) pelos parametros passados na execucao
     public void depositar(double valor) {
         saldo += valor;
@@ -33,9 +32,7 @@ public class Conta {
 
     // Implementação de Construtor
 
-    public Conta() {
-
-    }
+    public Conta() {}
 
     public Conta(int numero, double saldo, String nome, byte idade) {
         this.numero = numero;

@@ -1,6 +1,6 @@
 package com.java;
 
-// Type cast in inheritance exercise
+// Type cast in inheritance exercise //
 
 public class TestAccount extends Account {
     public static void main(String[] args) {

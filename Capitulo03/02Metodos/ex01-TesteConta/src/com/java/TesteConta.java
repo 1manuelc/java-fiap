@@ -9,6 +9,8 @@ public class TesteConta extends Conta {
         System.out.println("Saldo atual: " + contaCorrente.saldo);
 
         contaCorrente.depositar(200, 100);
+        contaPoupanca.depositar(100, 10);
+        contaInvestimento.depositar(200);
 
         System.out.println("Saldo atual: " + contaCorrente.saldo);
     }

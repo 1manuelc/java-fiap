@@ -5,8 +5,7 @@ package com.java;
 public class TestAccount extends Account {
     public static void main(String[] args) {
         Account dad = new Account(1001, 49, 7500);
-        CurrentAccount mom = new CurrentAccount();
-        mom.setInfo(1001, 51);
+        CurrentAccount mom = new CurrentAccount(1001,51, "Investments");
         mom.addBalance(5000);
 
         dad.removeBalance(500);

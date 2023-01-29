@@ -1,7 +1,8 @@
-Sobrecarga de Metodos:
+Sobrecarga de Metodos: (Artifício de Polimorfismo)
     Dois metodos com o mesmo nome e modificador, mas com assinaturas diferentes para guiar seu uso;
 
     p.ex.: depositar(double valor); e depositar(double valor, double taxa);
+    Pode-se mudar o tipo e quantidade de variáveis, mas não o nome do método
 
     A execução dependerá dos parâmetros passados
 

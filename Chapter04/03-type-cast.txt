@@ -1,25 +1,53 @@
-        /*
-        Account currentAccount = new Account(1089, 11, 3.87);
-        Account savingsAccount = new Account(1089, 51, 5500);
+-------------------------------------------------------------------------------------------
 
-        savingsAccount.getInfo();
-        savingsAccount.removeBalance(2500);
-        System.out.println("R$" + savingsAccount.getBalance());
+    TYPE CAST
 
-        currentAccount.getInfo();
-        currentAccount.addBalance(2500);
-        System.out.println("R$" + currentAccount.getBalance());
-        */
+Occurs when we force an object to be of other type of reference in some moment
+using explicit conversion.
 
-        CurrentAccount acc1 = (CurrentAccount) new Account(1111, 50, 2000);
-        // This is a type cast, that manages to convert types.
-        // Note that Account object conversion to CurrentAccount object it's possible because
-        // the CurrentAccount type is a subclass of Account, including additional features.
-        // If was the inverse, this conversion would be meaningless.
-        !note = I couldn't make this conversion btw, had to use other ways.
+This operation is possible because of the polymorphism of the objects.
 
-        CurrentAccount acc2 = acc1; // It's possible because its equal types (both CurrentAccount).
+    (ex1) Account cc = new CurrentAccount();
+    CurrentAccount c1 = (CurrentAccount)cc;
+                        |
+                        -> We forced cc (Account type) to work as CurrentAccount type
+                        reference in this particular moment with a cast.
 
-        Account acc3 = new Account();
-        // CurrentAccount acc4 = acc3; -> Impossible, different types, need a type cast to work.
-        CurrentAccount acc4 = (CurrentAccount) acc3;
+                        This only works cause the variable cc carry an CurrentAccount
+                        object in a different reference (the object still there, even
+                        without his proper reference). If wasn't a subclass, would be
+                        impossible.
+
+
+    (ex2) Account account = new Account();
+    CurrentAccount c2 = (CurrentAccount)account;
+                        |
+                        -> account variable don't carry an CurrentAccount object, so
+                        it's impossible to "create" references to inner subclass features.
+
+-------------------------------------------------------------------------------------------
+
+    HOW TO VERIFY THE TYPE
+
+Use the instruction "instanceof" in conditions.
+
+    if(cc instanceof Account) {
+        [code block]
+    }
+
+(example):
+    public static void main(String[] args) {
+        Account cc = new Account();             //-> isn't
+        // Account cc = new CurrentAccount();    //-> is
+        // CurrentAccount cc = new Account();   //-> error in conversion
+
+        if(cc instanceof CurrentAccount)
+            System.out.println("cc type is Account");
+        else
+            System.out.println("cc type isn't Account");
+    }
+
+Conclusion:
+    01. We can't instance superclass objects in variables of subclass types.
+    02. An object isn't instanceof of one class:
+        only if the type of object isn't equal to the instance.

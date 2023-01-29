@@ -1,0 +1,32 @@
+Constructors don't are included in the inheritance, id est, don't appear in subclasses to
+build them.
+
+    How do we fix that?
+
+00. (Optional) - You can create a default empty constructor of your subclass,
+    like did in the super.
+01. You'll need to create a custom constructor into the subclass.
+02. He'll call the superclass constructors using "super(args here)"
+03. Now you can add the particular data of your subclass.
+
+(example):
+    SUPERCLASS Account:
+        public Account() {};
+
+        public Account(int agency, int number) {
+            this.agency = agency;
+            this.number = number;
+        }
+
+        public Account(int agency, int number, double balance) {
+            this(agency, number); // -> calls the previous constructor with these 2 parameters
+            this.balance = balance;
+        }
+
+    SUBCLASS CurrentAccount:
+        public CurrentAccount() {}; // --> (00)
+
+        public CurrentAccount(int agency, int number, String type) { // --> (01)
+            super(agency, number); // --> (02)
+            this.type = type;      // --> (03)
+        }

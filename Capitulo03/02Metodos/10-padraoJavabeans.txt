@@ -8,4 +8,18 @@ REGRAS DE CLASSE JAVABEANS:
 
 Encapsulamento é aplicado a métodos e atributos e consiste em proteger os dados ou até mesmo escondê-los (dependendo do contexto)
 
-O uso dos métodos de leitura (get) e escrita (set) visam desacoplar os atributos de uma classe dos clientes que a utilizam (abstração6666)
+O uso dos métodos de leitura (get) e escrita (set) visam desacoplar os atributos de uma classe dos clientes que a utilizam (abstração)
+-> getSaldo();  -> recupera o valor de saldo.
+-> setSaldo();  -> atribui um valor ao saldo.
+-> isVazio();   -> convenção para retornar tipo boolean, usado em condições geralmente.
+
+Encapsulamento de Método:
+    	//métodos gets e sets
+
+    	public String getTelefoneFormatado(){
+    		return formatarTelefone(ddd,numero);
+    	}
+
+    	private String formatarTelefone(String ddd, String numero){
+    		return "(" + ddd + ") " + numero;
+    	}

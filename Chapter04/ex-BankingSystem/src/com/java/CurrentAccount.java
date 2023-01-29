@@ -6,6 +6,11 @@ public class CurrentAccount extends Account { // Extends features of Account sup
 
     public CurrentAccount() {}
 
+    public CurrentAccount(int agency, int number, String type) {
+        super(agency, number);
+        this.type = type;
+    }
+
     public String getType() {
         return type;
     }

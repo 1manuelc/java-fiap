@@ -1,11 +1,13 @@
-    Function override in subclasses work as an overwriting over the identical function in the superclass.
+    Function override in subclasses work overwriting the identical function
+    in the superclass. (Polymorphism artifice)
+        !!! -> What determines what function will be executed is the instance (obj) used.
 
     Example:
         SUPERCLASS Account:
             public void removeBalance(double value) {this.balance -= value;}
 
         SUBCLASS CurrentAccount:
-            @Override
+            @Override   // -> necessary to overwrite the superclass method
                 public void removeBalance(double value) {
                     value += 10;
                     super.removeBalance(value);

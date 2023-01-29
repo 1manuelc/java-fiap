@@ -5,12 +5,15 @@ public class Account {
     private int number;
     private double balance;
 
-    public Account() {
+    public Account() {}
+
+    public Account(int agency, int number) {
+        this.agency = agency;
+        this.number = number;
     }
 
     public Account(int agency, int number, double balance) {
-        this.agency = agency;
-        this.number = number;
+        this(agency, number); // -> calls the previous constructor with these 2 parameters
         this.balance = balance;
     }
 

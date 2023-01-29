@@ -1,6 +1,48 @@
-    Inheritance is when a subclass inherits a superclass characteristics (like attributes and functions)
-    To make this work, we need to add the word "extends" in the declaration of the subclass and refer
-    to what class will be the superclass for the respective class.
+    INHERITANCE - LESSON 01
+
+-------------------------------------------------------------------------------------------
+
+    CONCEPT
+
+Inheritance is when a subclass inherits a superclass characteristics
+    (like attributes and functions)
+Also is a way to make generic and particular/specialized attributes and methods inside
+each class
+
+Person Class
+(admit that this class have attributes like name, document, date of birth, etc.)
+    -> Employee extends Person
+    -> Student extends Person
+    -> Client extends Person
+
+-------------------------------------------------------------------------------------------
+
+    IT'S ONE? A RULE TO REMEMBER
+
+But how to know when inheritance is adequate in my context?
+Simple, you just need to ask yourself: "SubClassName" is one "SuperClassName"?
+                                       "SubClassName" is a type of "SuperClassName"?
+example: "Student" is one "Person"?
+         "Car" is a type of "Vehicle"?
+         Generally, "everything" that is included in "something".
+
+-------------------------------------------------------------------------------------------
+
+    SYNTAX
+
+To make this work, we need to add the word "extends" in the declaration of the subclass
+and refer to what class will be the superclass for the respective class.
 
     example:
         public class CurrentAccount extends Account {}
+
+-------------------------------------------------------------------------------------------
+
+    PARTICULARITIES
+
+OBS: Each class only can inherit a unique superclass, multiple inherit is impossible.
+By the way, a superclass can have unlimited subclasses.
+
+There's a hierarchy of inheritance, id est, subclasses inherits your respective superclass,
+that also inherits the default Java 'Object' Class. Indirectly, we can assume that our
+subclasses inherit Object features too.

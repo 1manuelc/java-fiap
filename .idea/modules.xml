@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Capitulo03/01Classes/01Classes.iml" filepath="$PROJECT_DIR$/Capitulo03/01Classes/01Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/02HelloJava/02HelloJava.iml" filepath="$PROJECT_DIR$/Capitulo02/02HelloJava/02HelloJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/03Operadores Aritmeticos/03Operadores Aritmeticos.iml" filepath="$PROJECT_DIR$/Capitulo02/03Operadores Aritmeticos/03Operadores Aritmeticos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/04Operadores de Incremento e Decremento/04Operadores de Incremento e Decremento.iml" filepath="$PROJECT_DIR$/Capitulo02/04Operadores de Incremento e Decremento/04Operadores de Incremento e Decremento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/05Operadores Relacionais/05Operadores Relacionais.iml" filepath="$PROJECT_DIR$/Capitulo02/05Operadores Relacionais/05Operadores Relacionais.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/06Operadores Lógicos/06Operadores Lógicos.iml" filepath="$PROJECT_DIR$/Capitulo02/06Operadores Lógicos/06Operadores Lógicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/07Fluxo de Controle/07Fluxo de Controle.iml" filepath="$PROJECT_DIR$/Capitulo02/07Fluxo de Controle/07Fluxo de Controle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo02/08Entrada de Dados/08Entrada de Dados.iml" filepath="$PROJECT_DIR$/Capitulo02/08Entrada de Dados/08Entrada de Dados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter05/04-arrays/ex-Arrays/ex-Arrays.iml" filepath="$PROJECT_DIR$/Chapter05/04-arrays/ex-Arrays/ex-Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter04/ex-BankingSystem/ex-BankingSystem.iml" filepath="$PROJECT_DIR$/Chapter04/ex-BankingSystem/ex-BankingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo03/02Metodos/ex01-TesteConta/ex01-TesteConta.iml" filepath="$PROJECT_DIR$/Capitulo03/02Metodos/ex01-TesteConta/ex01-TesteConta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter05/03-loops/ex01-cashier/ex01-cashier.iml" filepath="$PROJECT_DIR$/Chapter05/03-loops/ex01-cashier/ex01-cashier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo03/02Metodos/ex02-BankingSystem/ex02-BankingSystem.iml" filepath="$PROJECT_DIR$/Capitulo03/02Metodos/ex02-BankingSystem/ex02-BankingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Capitulo03/02Metodos/ex03-Animals/ex03-Animals.iml" filepath="$PROJECT_DIR$/Capitulo03/02Metodos/ex03-Animals/ex03-Animals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-fiap.iml" filepath="$PROJECT_DIR$/.idea/java-fiap.iml" />
+    </modules>
+  </component>
+</project>

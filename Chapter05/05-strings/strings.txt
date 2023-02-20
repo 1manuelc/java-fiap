@@ -1,0 +1,50 @@
+        STRINGS
+    CONCEPT AND IMPLEMENTATION
+Strings are a chain of characters, but in Java this isn't a primitive data type.
+But is a default Class implementation done to ease the action of concatenate characters into variables.
+
+    INSTANTIATING
+As a class, we need to remember to instantiate a String every time we invoke the class.
+
+(First way)
+String name;
+name = new String();
+name = "Apple";
+
+-> Here we instantiate like we did with objects, that's the "slow way".
+
+(Second way)
+String name2 = new String("Apple");
+
+-> Instantiating with one of the custom constructors.
+
+(Third way)
+String name3 = "Apple";
+
+-> Here we don't instantiate, but use an artifice of JDK machine named "pull".
+-> Works as a little cache memory that stores the content into the variable without
+initialize.
+
+    ADVISE
+Using String in a method/function, we'll need to instantiate or initialize
+the object, otherwise it won't work properly.
+
+    ESCAPE CHARACTERS
+Same as used in C:
+"\n" -> jump line.
+"\t" -> tab.
+""\"abc\"" -> double quotes.
+
+    CONCATENATING STRINGS
+There are three ways to concatenate strings in java.
+
+(01 - Plus operator)
+    String name = new String("Queen Apple");
+    String description = new String("The sweetest apple in our market");
+    String propaganda = name + " " + description;
+
+(02 - .concat)
+    propaganda = name.concat(" ").concat(description);
+
+(03 - Plus equal operator)
+    propaganda += "!";

@@ -1,0 +1,68 @@
+@@ -0,0 +1,67 @@
+
+    LESSON 04 - ARRAYS
+
+Arrays are a data structure capable to store multiple data values.
+Simplifying, they are declared as a special type os variable with "little-boxes" inside,
+capable of store homogenous (primitive types of data or objects) data.
+
+Each "box" inside the array have a location called index, and we can access determined data in that "i" position.
+! Every array starts with zero, ex: use 5 in his declaration, his indexes will be [0, 1, 2, 3, 4] (5 positions)
+
+///////////////////////////////////////////////////////////////
+
+    SYNTAX
+
+Declaration:
+    float[] values = new float[5];
+        or
+    float values[] = new float[5];
+
+
+Access:
+    To modify specified positions, use the index:
+        values[0] = 10
+            ...
+        values[4] = 40
+    ! If you don't modify the values after instance,
+    they'll be initialized in the default way.
+
+
+Declaration with Filling:
+    float values[] = { 10, 20, 30, 40, 50 };
+        or
+    float values[] = new float[] { 10, 20, 30, 40, 50 };
+
+///////////////////////////////////////////////////////////////
+
+    PRINTING
+
+Ok, how we print multiple values of these arrays?
+Using the loop structures.
+
+Usual For.
+        for(int i = 0; i < products.length; i++)
+            System.out.println(products[i].toString());
+
+Special Object's array for.
+        for(Product prod: products)
+            System.out.println(prod.toString());
+
+       ! (it reads: a new variable "prod" of type Product
+        roams the array "products")
+
+///////////////////////////////////////////////////////////////
+
+    MULTIDIMENSIONAL ARRAYS
+
+Also called matrix, the multidimensional arrays have multiple
+indexes, like [5][10].
+We read like line and column in this 2 index model (most common)
+
+The declaration is the same, but we add one more hook:
+    Product[][] localProducts = new Product[10][3];
+    (10 rows and 3 columns = 30 positions).
+
+The access slightly changes the hook too:
+    localProducts[2][1] = prod1;
+    localProducts[2][2] = prod2;

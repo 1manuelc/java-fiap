@@ -1,0 +1,92 @@
+        STRING METHODS
+
+Strings aren't just a class to fill names, we can use it to
+operate and compare each other (obviously, with objective).
+
+
+        EQUALS
+
+Methods: equals, equalsIgnoreCase.
+Compare strings with or without specifications.
+
+example:
+    String name = new String("apple");
+    String name2 = new String("Apple");
+    String name3 = new String("apple");
+
+    System.out.println(name.equals(name2)); // false (caps difference)
+    System.out.println(name.equalsIgnoreCase(name2)); // true (caps ignored)
+    System.out.println(name.equals(name3)); // true (identical)
+
+And the operator ==?
+He compares the position of the strings in the memory, isn't our
+objective here.
+
+
+    LENGTH AND START/END
+
+Methods: length, startsWith, endsWith;
+Return the length, compare parameter to initial and last
+word/character in the string.
+
+example:
+    String description = new String("Apple juice, the sweetest
+    juice in the world!");
+
+    System.out.println(description.length()); // 45
+    System.out.println(description.startsWith("Apple")); // true
+    System.out.println(description.endsWith("!")); // true
+
+
+    LOCATE AND POSITION
+
+Methods: charAt, indexOf, lastIndexOf.
+Return the specific character or position of a parameter string.
+
+example:
+    String description = new String("Apple juice, the sweetest
+    juice in the world!");
+
+    System.out.println(description.charAt(1)); // p
+    System.out.println(description.indexOf("j"); // 6
+    System.out.println(description.indexOf("juice"); // 6
+    System.out.println(description.lastIndexOf("e"); // 41
+
+
+    REPLACING AND SPLITTING
+
+Methods: replace, split.
+Replace specifically chars or words with parameter delimitation.
+!important: replacing is in the whole string, not just in the beginning.
+
+Split strings using a specific parameter too.
+
+example:
+    String description = new String("Apple juice, the sweetest
+    juice in the world!");
+
+    System.out.println(description.replace("A", "a")); // apple juice...
+    System.out.println(description.replace("Apple", "Orange")); // Orange juice...
+
+    System.out.println(description.split(" ").length); // 8 (quantity of strings
+    divided by space)
+
+    System.out.println(Arrays.toString(description.split(" "));
+    // [Orange, juice,, the, sweetest, juice, in, the, world!]
+    (Splits the string, convert to string, then show the pieces
+    as an array).
+
+
+    CHANGING CASE AND CUTTING
+Methods: toLowerCase, toUpperCase, substring.
+
+example:
+    String desc = new String("Hello, it's me!");
+    System.out.println(desc.toLowerCase()); // hello, it's me
+    System.out.println(desc.toUpperCase()); // HELLO, IT'S ME
+
+    System.out.println(desc.substring(0,4)); // HELLO (cuts from 0 to 4 index).
+    System.out.println(desc.substring(4)); //  IT'S ME (cuts from 4 to the end index).
+
+    System.out.println(desc.substring(desc.indexOf("IT"), desc.indexOf(" ")));
+    // IT (Cuts from the index of "IT" to the next " ").

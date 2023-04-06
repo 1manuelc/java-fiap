@@ -1,0 +1,84 @@
+    COLLECTIONS
+
+Working with arrays, we have some little problems with the
+implementation: fixed number of memory spaces (indexes), and
+need iteration until the end of the data structure to find some
+specific item.
+
+So now we can use the Collections, a set of classes and
+interfaces that constitute the Collection Frameworks data
+structure. It can be used to represent lists, stacks, queues,
+maps, sets and others.
+
+The interfaces represent a set of methods and functionalities
+for the classes to implement, meanwhile the classes are
+responsible to use the features given by the interface into
+the data structure.
+
+Collections can be divided in two:
+
+1. That's who implement the interface Collection:
+    Sub-interfaces: List (main implementation is ArrayList)
+    and Set (main is HashSet)
+
+2. Implement the interface Map (store values compound by
+[key, value]:
+    Sub-interfaces: SortedMap (main implementation is HashMap)
+
+Every interface have its own methods and rules.
+
+
+    BIG DIFFERENCE:
+
+The classes that implements the interface List allow duplicated
+items, but the classes that implements the interface Set,
+don't.
+
+    MAIN METHODS INHERITED BY THE COLLECTION INTERFACE
+add -> add an object in the set
+clear -> clear all objects in the set
+contains -> verify if the object contains a determined object
+isEmpty -> is the set empty?
+remove -> remove a specific object in the set
+size -> return the quantity of objects in the set
+toArray -> return an array containing the objects in the set
+    -> SPECIFIC TO SET
+
+    LIST INTERFACE METHODS:
+add -> add an object in a specific index
+get -> return an object by an index
+remove -> remove by index
+set -> overwrite object by index
+indexOf -> search and return a parameter index
+lastIndexOf -> same as previous, but with the last index found
+subList -> split the list using indexes
+
+    MAP INTERFACE METHODS:
+clear -> remove all maps
+containsKey -> search by key
+containsValue -> search by value
+get -> return a value by a key
+isEmpty -> is the map empty?
+keySet -> return a set containing the keys
+put -> add a map
+remove -> remove a map using a key
+size -> return number of maps
+values -> return number of values
+
+
+    GENERICS
+
+Feature born in Java 5, used to specify a class type to
+store in the data structure (even if we can store multiple
+types).
+
+! Generics don't allow to store values with class type
+different from the defined in his signature, neither
+primitive types.
+
+ex of signature:
+ArrayList<Product> list = new ArrayList<Product>();
+
+If you don't use generics, storing the returned values returned
+by the data structure would be a problem (you'll need to make
+a cast everytime you're returning the value to a variable).

@@ -18,10 +18,10 @@ public class FileTest {
 
         List<String> content = new ArrayList<>();
         content.add("Product; Quantity; Unit of Measure; Value per Unit;");
-        content.add("Pear; 200; pkg; R$ 5,40");
-        content.add("Strawberry; 400; box; R$ 6,50");
-        content.add("Pineapple; 280; un; R$ 5,00");
-        content.add("Lemon; 100; un; R$ 0,50");
+        content.add("Pear; 200; pkg; R$ 5.40");
+        content.add("Strawberry; 400; box; R$ 6.50");
+        content.add("Pineapple; 280; un; R$ 5.00");
+        content.add("Lemon; 100; un; R$ 0.50");
 
         writeInventory(filename, path, content);
         readInventory(path);

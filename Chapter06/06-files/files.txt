@@ -1,0 +1,20 @@
+To store data temporarily we use variables, to store in cloud we use databases,
+but locally we use files.
+
+In this example, we'll create a Java program capable to
+create, write and read an .csv file, accountable to have
+an inventory of products of a supermarket.
+
+What's more, the program will test the validity of the
+file and directory and create if they don't exist.
+
+
+example in: src/
+
+
+New Classes discovered in the Java IO package:
+    - java.io.BufferedReader;
+    - java.io.File;
+    - java.io.FileReader;
+    - java.io.FileWriter;
+    - java.io.PrintWriter;

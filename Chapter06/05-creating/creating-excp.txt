@@ -1,0 +1,15 @@
+CREATING EXCEPTIONS
+    
+    As said before, we can create our own exceptions to
+    catalogue and solve, but with few specifications.
+
+    To create a Exception, we need to create a class that
+    inherits Exception or Runtime Exception.
+
+        * if intherits Exception, will be a Checked Exception, require to solve.
+
+        * else, if inherits Runtime Exception, will be an Unchecked Exception, throwable and not required to solve.
+
+    By default, Exceptions in Java have suffix "Exceptions".
+
+    example in: src/DivideByZero

@@ -1,0 +1,10 @@
+EXCEPTIONS PROPAGATION
+
+    We can choose to not treat an exception (with try-catch block) and simply
+    propagate it, or better, delegate to the method who called the exception to
+    solve it.
+
+    The clause "throws" in the method declares exceptions that can happen and delegate to the
+    method who called to solve (using try-catch possibly).
+
+    example in: src/Propagation.java

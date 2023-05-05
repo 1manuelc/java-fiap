@@ -4,15 +4,15 @@ public class Unchecked {
         // Unchecked exceptions
         
         try {
-            int val = 10 / 0; // Arithmetic Exception
+            //int val = 10 / 0; // Arithmetic Exception
 
             int values[] = new int[3];
             System.out.println(values[4]); // Array index Exception
 
-            String name = null;
-            System.out.println(name.length()); // NullPointer Exception
+            //String name = null;
+            //System.out.println(name.length()); // NullPointer Exception
 
-            int number = Integer.parseInt("zero"); // NumberFormat exception
+            //int number = Integer.parseInt("zero"); // NumberFormat exception
 
         } catch (ArithmeticException e) {
             System.out.println("It's not possible to divide by zero");

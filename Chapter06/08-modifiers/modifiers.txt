@@ -1,0 +1,18 @@
+MODIFIERS
+    - Abstract:
+        Used in Classes, make that class invisible to 
+        instantiating. Just let the class to be inherited
+        by other sublasses.
+
+        ex: public abstract class Account {}
+
+    - Static:
+        Used in attributes or methods of classes, let the
+        reference be shared to all instances of his 
+        class.
+
+    - Final:
+        Used in methods or attributes, makes the reference unalterable in every future application.
+
+Constants are composed by the modifiers:
+    public static final int bankNumber = 33;

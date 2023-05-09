@@ -1,0 +1,16 @@
+INTERFACES
+Interface is a collection of abstract methods and attributes, variating in every single implementation in
+different objects.
+
+Interfaces are not instantiable, they're implementable and contain empty methods or constants. Being useful
+to replication and abstraction, the content of an interface is a "contract" between the object and the interface.
+
+This contract affirmate the presence of the abstraction into the instantiated object, logically with his own
+particulities of implementation (id est, his unique code block variating in contexts).
+
+examples in: /src/
+
+note:
+    Creating constants inside an interface, you can omit the modifiers "public static final" as used in one
+    common class implementation, because JVM understands everything inside an interface as public, static and
+    final (except methods, whove still don't have a implementation).

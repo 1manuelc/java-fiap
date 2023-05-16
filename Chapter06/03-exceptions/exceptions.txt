@@ -33,14 +33,27 @@ HIERARCHY
 
                 examples in src/Unchecked.java
 
+    Methods inherited by Throwable:
+        - printStackTrace();    -> prints the error's line and column
+        - getMessage();         -> return the message inside the exception
+
+    Both methods ease our life speaking of recognizing exceptions.
+
     Ps:
         - The class Exception is the most generalist class, catches
         all errors.
+
         - If there isn't a specialized exception catch, the generalist
         will catch and treat all exceptions as programmed.
 
+        - The "catches" need to be in order of specialization, id est,
+        exceptions upper need to be more specific, and lower lines
+        exceptions to be more generalist. All to don't interrupt the
+        program runtime and treat the predictable problems.
 
-
+        - Instead of using "System.out.println(...e.printStackTrace());
+        we can use "System.err.println(...), cause' mainly the stack trace
+        is stored in log files instead of the default data output "out".
 
 
 FINALLY

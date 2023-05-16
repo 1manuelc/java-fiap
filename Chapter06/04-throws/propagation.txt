@@ -1,10 +1,17 @@
 EXCEPTIONS PROPAGATION
 
     We can choose to not treat an exception (with try-catch block) and simply
-    propagate it, or better, delegate to the method who called the exception to
-    solve it.
+    propagate it, or better, delegate to the method who called our method who
+    throwed the exception to solve it.
+
+    ps:
+        - If the exception isn't throwed, the "outside" method won't be able to notice
+        the exception that occurred inside the called method scope.
+        - Multiple exceptions can be throwed if the declaration is composed by commas
+        and more than one exception.
+        - Throws is used only for Checked exceptions, who need to be treated.
 
     The clause "throws" in the method declares exceptions that can happen and delegate to the
-    method who called to solve (using try-catch possibly).
+    method who called to solve (using try-catch on the outside possibly).
 
     example in: src/Propagation.java

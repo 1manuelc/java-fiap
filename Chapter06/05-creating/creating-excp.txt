@@ -10,6 +10,9 @@ CREATING EXCEPTIONS
 
         * else, if inherits Runtime Exception, will be an Unchecked Exception, throwable and not required to solve.
 
+    ps: Throwable exceptions (declared in methods) inherits the Exception class, means that they're "Checked".
+        Instead, instantiating artbitrarily a exception means that it'll be "Unchecked".
+
     By default, Exceptions in Java have suffix "Exceptions".
 
     example in: src/DivideByZero

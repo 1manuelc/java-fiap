@@ -1,20 +1,163 @@
 To store data temporarily we use variables, to store in cloud we use databases,
 but locally we use files.
 
-In this example, we'll create a Java program capable to
-create, write and read an .csv file, accountable to have
-an inventory of products of a supermarket.
+"All the data created and processed in runtime is instantly killed
+when the program runtime is over"
 
-What's more, the program will test the validity of the
-file and directory and create if they don't exist.
+Files are used mainly for setting up programs parameters without recompile them,
+but also for communicate different systems with in/out exports.
+
+    example: A system of payment of bills, the backend connect and export an .csv file and
+    the frontend read the file, presenting to the costumer.
+
+STREAMS:
+    In Java, the main features to write/read files is the package files in Java.io,
+    characterized by Streams, id est, a flux control for entry/exit of data with a
+    source for read and a destiny to write.
+
+    Input stream -> read a source
+    Output stream -> write in a source
+
+    The main type of readable/writable files in java is in text extensions, because
+    they are easily visually readable, manipulable in other programs, and can be
+    very useful in multiple contexts.
+
+    Generally, the registers are separated by tabs, commas and enters with columns
+    and lines orientation.
+
+    Basically, to write data in a file we need:
+        - Open/create the file
+        - Write in it
+        - Close it
+
+    The major classes to use in files are:
+    (java.io.~)
+        - FileWriter -> open the stream
+        - PrintWriter -> write in it
+
+    WRITING:
+        //Opening the file and assigning a stream destiny
+        FileWriter stream = new FileWriter("archive.txt");
+            // note: file will be opened if already exists, else,
+            // created because don't exist yet.
+
+        PrintWriter print = new PrintWriter(stream);
+
+        print.println("Test");
+        print.println("Writing in the file");
+
+        //Close the destiny
+        print.close();
+
+        //Close the file in runtime
+        stream.close();
+
+        Extra:
+        - We can specify the complete address of the file in
+        the stream instantiation:
+            FileWriter stream = new FileWriter("C://archive.txt");
+
+        - May be necessary use a try/catch to treat possible errors
+        in the opening or manipulating time.
+            ...
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+    READING:
+        Similarly to write in the file, reading is easily made using
+        the classes:
+            - java.io.FileReader -> opens the stream
+            - java.io.BufferedReader -> use the stream
+
+        example:
+              try {
+                //Open the file
+                FileReader stream = new FileReader("archive.txt");
+                BufferedReader reader = new BufferedReader(stream);
+
+                //Read a line of the file
+                String line = reader.readLine();
+
+                while (line != null){
+                  System.out.println(line);
+
+                  //Reads the next line of the file
+                  line = reader.readLine();
+                }
+
+                reader.close();
+                //Close the file and stream
+                stream.close();
+
+              } catch (IOException e) {
+                e.printStackTrace();
+              }
+
+        note: both of the classes shown can throw the
+        FileNotFoundException.
+
+    MANAGING:
+        The java IO API contains one more important class to show,
+        the File class.
+        Class that is capable to manage (rename, verify permissions,
+        existence, create, etc.) files.
+
+        Her major methods are:
+            exists(); -> verify existence of files/directories
+            isDirectory(); / isFile();
+            canRead(); / canWrite();
+            mkdir();
+            renameTo();
+            length();
+            delete();
+            getPath();
+
+        examples:
+            public static void main(String[] args) {
+
+            	File archive = new File("archive.txt");
+            	// Verify the file existence
+            	if (archive.exists()) {
+            		System.out.println("The file exist!"+
+            				"
+                    Can be read: " + archive.canRead() +
+                                    "
+                    Can be write: " + archive.canWrite() +
+                                    "
+                    Length: " + archive.length() +
+                                    "
+                    Path: " + archive.getPath());
+            	} else {
+            		// Create the file
+            		try {
+            			if (archive.createNewFile())
+            				System.out.println("File created!");
+            			else
+                    System.out.println("Error creating file!");
+
+            		} catch (IOException e) {
+            			e.printStackTrace();
+            		}
+            	}
+            }
 
 
-example in: src/
+PRACTICE:
+    In this example, we'll create a Java program capable to
+    create, write and read an .csv file, accountable to have
+    an inventory of products of a supermarket.
+
+    What's more, the program will test the validity of the
+    file and directory and create if they don't exist.
 
 
-New Classes discovered in the Java IO package:
-    - java.io.BufferedReader;
-    - java.io.File;
-    - java.io.FileReader;
-    - java.io.FileWriter;
-    - java.io.PrintWriter;
+    example in: src/
+
+
+    New Classes discovered in the Java IO package:
+        - java.io.BufferedReader;
+        - java.io.File;
+        - java.io.FileReader;
+        - java.io.FileWriter;
+        - java.io.PrintWriter;

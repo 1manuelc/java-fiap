@@ -1,8 +1,8 @@
 MODIFIERS
     - Abstract:
         Used in Classes, make that class invisible to 
-        instantiating. Just let the class to be inherited
-        by other sublasses.
+        instantiating. Just let the class be inherited
+        by other subclasses.
 
         ex: public abstract class Account {}
 
@@ -13,6 +13,11 @@ MODIFIERS
 
     - Final:
         Used in methods or attributes, makes the reference unalterable in every future application.
+        Inverse of Abstract, don't allow subclasses for that class marked with the modifier.
+        In attributes or variables, use this modifier to make it invariable, in other words, constant.
 
-Constants are composed by the modifiers:
+Constants are composed by three modifiers:
+-> they have the three characteristics:
+    - visible to all
+    - unmodified in all the code
     public static final int bankNumber = 33;

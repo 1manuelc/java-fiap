@@ -2,12 +2,12 @@ POLYMORPHISM
 
     Means "quality or condition to assume different shapes".
     Specifically in development, polymorphism means multiple
-    behaviours depending of the context.
+    behaviours depending on the context.
 
-    A polymorphic method results in different actions depending of the object used as reference.
+    A polymorphic method results in different actions depending on the object used as reference.
 
     The polymorphic capacity is possible because of the
-    Inheritance, 'cause allows variables of reference for
+    Inheritance, because allows variables of reference for
     different objects.
 
     Invoking the same method for different actions, the

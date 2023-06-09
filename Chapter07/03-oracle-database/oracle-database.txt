@@ -1,0 +1,33 @@
+ORACLE DATABASE AND SQL COMMANDS
+
+    In this lesson, the teacher shows how to use
+    the Oracle Database in simple steps to create
+    a table to store and retrieve data from it.
+
+    1. Install "Oracle SQL Development".
+    2. Create a new connection with:
+        - Connection name
+        - Username
+        - Password
+        - Hostname
+        - Port
+        - Service name
+        
+        ps: These set of keys are much important
+        to connect the program with the DBMS
+        using the JDBC API, remember them carefully.
+
+    3. Once you are connected, you can create a new
+    table with well-defined tuples composed by different
+    data types.
+    4. Create a sequence for the PK in every table,
+    starting with 1 and increasing by 1 every time.
+
+
+MOST COMMON SQL COMMANDS
+
+    INSERT, UPDATE, SELECT & DELETE (DML Commands)
+    
+    These commands are easily made dragging the table
+    to a query builder in the graphic interface, it'll
+    ask step by step in a wizard what you want to do.

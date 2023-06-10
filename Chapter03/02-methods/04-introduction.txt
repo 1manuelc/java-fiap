@@ -1,0 +1,15 @@
+Syntax for method declaration in Java
+    modifiers returning type yourMethodName (argument list) {
+        code block
+    }
+
+1. modifier = accessibility of the method (hierarchy): public, private, protected (omitting modifier,
+    the default is friendly)
+2. returning type = void or wanted data type
+3. argument list = list of arguments to be received for the method work well, need to explicit the
+    type of every argument and separate them with commas.
+
+    example:
+        void deposit(int agency, string accountNumber, double value) {
+            // code block
+        }

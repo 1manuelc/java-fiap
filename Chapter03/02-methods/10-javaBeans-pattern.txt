@@ -1,0 +1,22 @@
+The JavaBeans pattern dictates names for variables, types for return of methods and other aspects
+of the objects, called "beans", to utilize them as maximum as possible.
+
+Rules of JavaBeans class:
+    - Have a default constructor
+    - Encapsulate attributes, creating methods for access them (getters and setters)
+    - Implement java.io.Serializable
+        public Class Example implements Serializable
+
+Encapsulation is applied to methods and attributes and consists of protect data or even hide it,
+depending on the context.
+
+The use of methods capable of read (get) and write (set) aim to decouple the attributes of a class
+of the user.
+-> getBalance();  -> retrieves the balance value.
+-> setBalance();  -> attribute a new value for the balance.
+-> isEmpty();     -> Convention to return a boolean type, used generally in conditions.
+
+Method encapsulation:
+    //get and set
+    public String getFormattedPhone(){return formatPhone(ddd,number);}
+    private String formatPhone(String ddd, String number){return "(" + ddd + ") " + number;}

@@ -1,0 +1,50 @@
+A class constructor is liable to replicate your class in objects, initializing the attributes
+in memory or even filling them, making possible the replication of the object in a new variable.
+
+The default constructor only initializes the attributes in memory and references them with the
+variable, but won't fill them.
+
+It's possible to customize the object constructor to fill information on the signature
+through the creation of a method with identical name of the class without return types and
+return in the code block.
+
+Remember that the creation of a new constructor doesn't overwrite the default constructor,
+by the way, will induce a warning speaking "no default constructor". You must create a default
+constructor with equal name, but empty.
+
+    Code with default constructor:
+
+        Account currentAcc = new Account();
+        Account savingsAcc = new Account();
+        Account investmentAcc = new Account();
+
+        currentAcc.number = 11;
+        currentAcc.balance = 20.5;
+        currentAcc.client.name = "Leandro Jorge";
+        currentAcc.client.age = 36;
+        .   .   .
+
+    Code with custom constructor:
+
+        Account currentAcc = new Account(11, 20.5, "Leandro Jorge",(byte)36);
+        Account savingsAcc = new Account(51, 4500, "Fulano Silva", (byte)40);
+        Account investmentAcc = new Account(21, 500, "Ciclano Pereira", (byte)25);
+
+    In this case, the constructor shows the inclusion of data inside the attributes of the object
+    through the call of the constructor method.
+
+    Remember that we can make a constructor call another, logically the both must be different and
+    with different number of parameters.
+
+        public Account() {
+        }
+
+        public Account(int agency, int number) {
+            this.agency = agency;
+            this.number = number;
+        }
+
+        public Account(int agency, int number, double balance) {
+            this(agency, number); // -> call the last constructor
+            this.balance = balance;
+        }

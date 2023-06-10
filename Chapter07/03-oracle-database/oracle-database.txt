@@ -1,8 +1,8 @@
 ORACLE DATABASE AND SQL COMMANDS
 
     In this lesson, the teacher shows how to use
-    the Oracle Database in simple steps to create
-    a table to store and retrieve data from it.
+the Oracle Database in simple steps to create
+a table to store and retrieve data from it.
 
     1. Install "Oracle SQL Development".
     2. Create a new connection with:
@@ -13,7 +13,7 @@ ORACLE DATABASE AND SQL COMMANDS
         - Port
         - Service name
         
-        ps: These set of keys are much important
+        ps: This set of keys is much important
         to connect the program with the DBMS
         using the JDBC API, remember them carefully.
 

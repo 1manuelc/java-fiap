@@ -1,0 +1,46 @@
+CONNECTING JAVA TO ORACLE DATABASE
+
+In your project source directory, you'll need to create a
+directory called "lib" and store inside it the wanted JDBC program in
+an .jar file.
+After storing him, add to the program Build Path using the IDE.
+Now you're ready to connect your java program to the DB.
+
+CLASSES:
+To connect, you'll need to import some classes capable of log-in and
+manage the database, like:
+    - java.sql.Connection;
+    - java.sql.DriverManager;
+    - java.sql.SQLException;
+
+Follow the steps to establish the connection:
+    1. Define the Driver using DriveManager class.
+    2. Define the connection allowing the DriverManager to manage the URL.
+
+Now, you're able to pass SQL to the Database commands using your
+java code and treat possible exceptions using the SQLException class.
+
+example:
+    public static void main(String[] args) {
+        try {
+            //Defining the driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            //Connect using the driver connection with the URL
+            //established in the OracleDB program.
+            Connection connect = DriverManager.getConnection("url", "username", "password");
+            System.out.println("Connected!");
+
+            //Closing the connection
+            connect.close();
+
+        //Treating possible exceptions in the connecting process.
+        } catch (SQLException e) {
+            System.err.println("Error connecting to the OracleDB");
+            e.printStackTrace();
+
+        } catch (ClassNotFoundException) {
+            System.err.println("JDBC Driver not found!");
+            e.printStackTrace();
+        }
+    }

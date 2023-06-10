@@ -1,0 +1,16 @@
+Types for integers
+        int = -2bi until 2bi (4 bytes)
+        short = -32,768 until 32,767 (2 bytes)
+        long = -9 until 9 quintillion (8 bytes)
+        byte = -128 until 127 (1 byte)
+        
+Types for floating point
+    float = 6-7 decimal digits
+    double = 15 decimal digits
+
+Type for character (char)
+        
+Boolean type (boolean)
+
+!Type cast or explicit conversion it's certain only from a lower length type to a
+larger length type, the inverse is uncertain.

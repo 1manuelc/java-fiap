@@ -1,0 +1,24 @@
+Access modifiers are reserved words that limit the access for:
+- Classes
+- Attributes
+- Methods
+- Constructors
+
+These modifiers are:
+    - Public:
+        Can be used for all classes, make them visible to all packages.
+
+    - Private:
+        The element marked with it can be accessed only in the same class.
+
+    - Protected
+        Can be accessed by classes and subclasses in the same package.
+
+    - Package ou Friendly:
+        Default modifier (when you omit it)
+        The element can be accessed by classes and subclasses in the same package.
+
+Bonus polymorphism modifiers that we'll see later:
+    - Static
+    - Abstract
+    - Final

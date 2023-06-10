@@ -1,0 +1,24 @@
+Methods overload: (Polymorphism feature)
+    Two methods with the same name and modifier, but with different signatures for different applications.
+
+    example:    deposit(double value); and
+                deposit(double value, double tax);
+
+    Can change the type and quantity of variables, but can't change the method name.
+    The runtime depends on the parameters passed.
+
+This overload works the same way for variables:
+    If it exists a variable 'number' in the actual class and a variable of same name
+    inside a method in the class:
+
+    public class App {
+        int number;
+        
+        public void createAgency(int number) {
+            this.number = scanner.nextInt();
+        }
+    }
+
+The difference between the two variables with equal name it is the reserved word "this",
+that restricts the use of the variable for the actual scope one.
+    

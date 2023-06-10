@@ -1,30 +1,30 @@
 INTRODUCTION TO JAVA AND DATABASES
 
-    Every large scale program nowadays need to have a database
-    integrated, to get, set, update and delete data from common
-    operations.
+    Every large scale program nowadays needs to have a database
+integrated, to get, set, update and delete data from common
+operations.
 
     Even if it's in one file of backup or in cloud and local
-    databases, programs made in the programming languages based in
-    object-oriented paradigm have many alternatives of backup.
+databases, programs made in the programming languages based in
+object-oriented paradigm have many alternatives to back up.
 
     Previously, we viewed how to write and read files in Java, now
-    we gonna' see how Java connects and interacts with Oracle Database.
+we're going to see how Java connects and interacts with Oracle Database.
 
 
 DBMS (Database Management System, SGBD in Portuguese).
 
-    We'll connect our Java program with a DBMS, a software capable to
-    create and manipulate databases with ease.
+    We'll connect our Java program with a DBMS, software capable
+of creating and manipulating databases with ease.
 
-    Java uses an API called JDBC (Java Database Connection), it's a set
-    of well-defined Interfaces who provide connection with the DBMS.
+    Java uses an API called JDBC (Java Database Connection). It's a set
+of well-defined Interfaces that provide connection with the DBMS.
 
-    Every enterprise of databases have it's own set of
-    instructions (libraries) inside the JDBC, properly
-    for connect perfectly the Java program and the DBMS,
-    with a single and centered API.
+    Every enterprise of databases has its own set of
+instructions (libraries) inside the JDBC, properly
+for connect perfectly the Java program and the DBMS,
+with a single and centered API.
 
-    Exemplifying, if you want to change your database 
-    without much work, you need only to change the
-    library in use in your JDBC Interface.
+    Exemplifying, if you want to change your database
+without much work, you need only to change the
+library in use in your JDBC Interface.

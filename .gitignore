@@ -2,6 +2,7 @@
 *.class
 .vscode
 .iml
+out
 
 # Log file
 *.log

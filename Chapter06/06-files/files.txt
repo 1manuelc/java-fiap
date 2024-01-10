@@ -11,7 +11,7 @@ but also for communicate different systems with in/out exports.
     the frontend read the file, presenting to the costumer.
 
 STREAMS:
-    In Java, the main features to write/read files is the package files in Java.io,
+    In Java, the main features to write/read files are in the package files in Java.io,
     characterized by Streams, id est, a flux control for entry/exit of data with a
     source for read and a destiny to write.
 
